@@ -16,18 +16,117 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 } */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #333;
+  color: azure;
+  font-size: 24px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding-right: 20px;
+}
+div h4{
+  padding:1.5rem;
+  font-size: 24px;
+  color: #FCEDF4;
+  font-weight: bold;
+}
+.cardContainer{
+  margin-top: 250px; /* Ensure the events are not overlapped by the nav */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  
+}
+.Card{
+max-width: 350px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+margin: 20px;
+transition: box-shadow 0.3s ease;
+height: 470px;
+}
+.cardContent{
+  padding: 10px;
+  color: #111;
+  position: relative;
+}
+.EventNameAndLocation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+
+}
+.locationContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+/* div.Date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+position: absolute;
+bottom: -15;
+right: 0;
+} */
+
+.ButtonAndDate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ButtonAndDate .Date{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+
+}
+div.Date svg{
+  margin: 0 6px;
+}
+button{
+  padding: 7px;
+  background-color: #EE4E4E;
+  border-radius: 4px;
+  margin-top: 20px;
+  color: #f8f9fa;
+}
