@@ -28,6 +28,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: "inter";
 }
 nav{
   display: flex;
@@ -39,7 +40,7 @@ nav{
   font-size: 24px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   position: fixed;
   left: 0;
   top: 0;
@@ -97,6 +98,7 @@ height: 470px;
   justify-content: center;
   align-items: center;
   font-weight: 400;
+  color: #333;
 }
 /* div.Date{
   display: flex;

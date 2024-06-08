@@ -1,32 +1,16 @@
 import React from "react";
+import Button from "@/Ui/Button";
 import {
   GetAllEvenets,
   getFeatured,
   getFilteredDate,
   GetEventId,
 } from "@/Dummy";
-import Link from "next/link";
 const index = () => {
   const events = getFeatured();
   return (
     <>
-      <nav>
-        <div>
-          <h4>Eventers!</h4>
-        </div>
-
-        <ul>
-          <li>
-            <Link href="">Something</Link>
-          </li>
-          <li>
-            <Link href="">Something</Link>
-          </li>
-          <li>
-            <Link href="">Something</Link>
-          </li>
-        </ul>
-      </nav>
+   
       <div className="cardContainer">
         {events.map((event) => {
           return (
@@ -63,50 +47,54 @@ const index = () => {
                   </div>
                 </div>
                 <p style={{ marginTop: "12px" }}>{event.description}</p>
-                <div className="ButtonAndDate"><button>Book for event</button>
-                
-                <div className="Date">
-                  <svg
-                    version="1.0"
-                    id="Layer_1"
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 64 64"
-                    enable-background="new 0 0 64 64"
-                    fill="#000000"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <g>
+                <div className="ButtonAndDate">
+                  <Button link={event.id}>Book for event</Button>
+
+                  <div className="Date">
+                    <svg
+                      version="1.0"
+                      id="Layer_1"
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
                         {" "}
-                        <path
-                          fill="#394240"
-                          d="M60,4H48c0-2.211-1.789-4-4-4s-4,1.789-4,4H24c0-2.211-1.789-4-4-4s-4,1.789-4,4H4C1.789,4,0,5.789,0,8v52 c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V8C64,5.789,62.211,4,60,4z M56,56H8V28h48V56z M56,20H8v-8h8c0,2.211,1.789,4,4,4 s4-1.789,4-4h16c0,2.211,1.789,4,4,4s4-1.789,4-4h8V20z"
-                        ></path>{" "}
-                        <rect
-                          x="8"
-                          y="28"
-                          fill="#F9EBB2"
-                          width="48"
-                          height="28"
-                        ></rect>{" "}
-                        <path
-                          fill="#F76D57"
-                          d="M56,20H8v-8h8c0,2.211,1.789,4,4,4s4-1.789,4-4h16c0,2.211,1.789,4,4,4s4-1.789,4-4h8V20z"
-                        ></path>{" "}
-                      </g>{" "}
-                    </g>
-                  </svg>
-                  { new Date(event.date).toLocaleDateString('en-US',{day:'numeric',month:"long",year:"numeric"})}
+                        <g>
+                          {" "}
+                          <path
+                            fill="#394240"
+                            d="M60,4H48c0-2.211-1.789-4-4-4s-4,1.789-4,4H24c0-2.211-1.789-4-4-4s-4,1.789-4,4H4C1.789,4,0,5.789,0,8v52 c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V8C64,5.789,62.211,4,60,4z M56,56H8V28h48V56z M56,20H8v-8h8c0,2.211,1.789,4,4,4 s4-1.789,4-4h16c0,2.211,1.789,4,4,4s4-1.789,4-4h8V20z"
+                          ></path>{" "}
+                          <rect
+                            x="8"
+                            y="28"
+                            fill="#F9EBB2"
+                            width="48"
+                            height="28"
+                          ></rect>{" "}
+                          <path
+                            fill="#F76D57"
+                            d="M56,20H8v-8h8c0,2.211,1.789,4,4,4s4-1.789,4-4h16c0,2.211,1.789,4,4,4s4-1.789,4-4h8V20z"
+                          ></path>{" "}
+                        </g>{" "}
+                      </g>
+                    </svg>
+                    {new Date(event.date).toLocaleDateString("en-US", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </div>
                 </div>
-                </div>
-                
               </div>
             </div>
           );
