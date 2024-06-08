@@ -48,7 +48,8 @@ nav{
 }
 ul{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* gap: 100px; */
   align-items: center;
   width: 50%;
   padding-right: 20px;
@@ -60,7 +61,7 @@ div h4{
   font-weight: bold;
 }
 .cardContainer{
-  margin-top: 250px; /* Ensure the events are not overlapped by the nav */
+  margin-top: 700px; /* Ensure the events are not overlapped by the nav */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -69,6 +70,7 @@ div h4{
   justify-content: center;
   
 }
+
 .Card{
 max-width: 350px;
 display: flex;

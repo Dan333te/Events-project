@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+    width: 400px;
+    height: 200px;
+    background: none;
+    box-shadow: 0.5px 3px 2px 1px #cdbfbf23 ;
+    padding: 12px;
+   /* margin-top: 500px; */
+
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    /* font-size: 40px; */
+}
+.control{
+    font-size: 16px;
+}
+.select{
+    padding: 12px;
+}

@@ -23,7 +23,7 @@ const events = [
       name: 'Music Festival 2024',
       address: 'Iraq,Baghdad',
       isFeatured: true,
-      date: '2024-07-10',
+      date: '2023-07-10',
       imageUrl: 'https://i.pinimg.com/originals/6a/bb/70/6abb7067130142a49e794230222cd8f3.jpg',
       description: 'Experience an unforgettable day of live performances and entertainment at Music Festival 2024, showcasing top artists and bands.'
 
@@ -33,7 +33,7 @@ const events = [
       name: 'Food Carnival 2024',
       address: 'Iraq,Baghdad',
       isFeatured: false,
-      date: '2024-10-05',
+      date: '2023-10-05',
       imageUrl: 'https://th.bing.com/th/id/R.84ce0840689726186576f8c5427d4d8c?rik=lNWYaxQn6uIs2w&pid=ImgRaw&r=0',
       description: 'Indulge in a variety of culinary delights at Food Carnival 2024, featuring food trucks, gourmet vendors, and cooking demonstrations.'
 
@@ -43,7 +43,7 @@ const events = [
       name: 'Startup Summit 2024',
       address: 'Iraq,Baghdad',
       isFeatured: true,
-      date: '2024-11-22',
+      date: '2023-11-22',
       imageUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/aa8625109287767.5fd08439c7676.jpg',
       description: 'Connect with entrepreneurs and investors at Startup Summit 2024, a premier event for networking, learning, and business growth.'
 

@@ -14,9 +14,9 @@ const NavBar = () => {
         <li>
           <Link href="/events">All Events</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="">Browse Events</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   </header>

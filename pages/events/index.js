@@ -6,11 +6,18 @@ import {
   getFilteredDate,
   GetEventId,
 } from "@/Dummy";
+import SearchEvent from "@/Components/SearchEvent";
+import { useRouter } from "next/router";
 const EventsPage = () => {
+  const router=useRouter()
+  const onSearch=(year,month)=>{
+    router.push(`/events/${year}/${month}`)
+    
+  }
   const events=GetAllEvenets()
   return (
     <>
-   
+  
       <div className="cardContainer">
         {events.map((event) => {
           return (
@@ -100,7 +107,10 @@ const EventsPage = () => {
           );
         })}
       </div>
+   <SearchEvent onSearch={onSearch}/>
+    
     </>
+    
   )
 }
 
